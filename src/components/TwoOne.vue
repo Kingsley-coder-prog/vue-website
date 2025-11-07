@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto px-5 lg:px-20 h-[100vh] md:h-[80vh] flex flex-colp justify-between items-center gap-10"
+    class="container mx-auto px-5 lg:px-20 h-[100vh] md:h-[80vh] flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-10"
   >
     <!-- <div class=""> -->
     <div class="w-full flex items-center flex-col md:items-start">
@@ -34,7 +34,16 @@ const props = defineProps(["name", "imgsrc", "visit", "btnName"]);
 </script>
 
 <style scoped>
-/* .home {
-  width: 900px;
-} */
+.home {
+  animation: up-down 1s alternate infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 </style>
