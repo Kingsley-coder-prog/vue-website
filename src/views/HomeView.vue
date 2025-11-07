@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TwoInOne
+    <TwoOne
       :name="'Grow Your Business With'"
       :imgsrc="home"
       :visit="'/about'"
@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import TwoInOne from "../components/TwoInOne";
-import home from "../assets/images/home.png";
+import TwoOne from "../components/TwoOne.vue";
+import home from "../assets/images/home.jpg";
 </script>
 
 <style scoped>

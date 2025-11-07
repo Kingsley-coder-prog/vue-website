@@ -1,17 +1,17 @@
 <template>
   <div>
-    <TwoInOne
+    <TwoOne
       :name="'Welcome To About Page'"
       :imgsrc="home"
       :visit="'/services'"
-      :btnName="'Get Started'"
+      :btnName="'Services'"
     />
   </div>
 </template>
 
 <script setup>
-import TwoInOne from "../components/TwoInOne";
-import home from "../assets/images/home.png";
+import TwoOne from "../components/TwoOne.vue";
+import home from "../assets/images/home.jpg";
 </script>
 
 <style scoped>
